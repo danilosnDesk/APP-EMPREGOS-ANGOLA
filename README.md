@@ -1,6 +1,6 @@
-# Expo Router Example
+# APP EMPREGOS ANGOLA
 
-Use [`expo-router`](https://expo.github.io/router) to build native navigation using files in the `app/` directory.
+Use [`REACT-NATIVE`](https://reactnative.dev/) to build this application
 
 ## 🚀 How to use
 
@@ -13,3 +13,5 @@ npx create-react-native-app -t with-router
 - [Expo Router: Docs](https://expo.github.io/router)
 - [Expo Router: Repo](https://github.com/expo/router)
 - [Request for Comments](https://github.com/expo/router/discussions/1)
+
+#APPLICATION IS GONNA HELP PEOPLE WHO IS MISSING FOR A LOCAL JOB
