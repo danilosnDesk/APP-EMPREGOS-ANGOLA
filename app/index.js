@@ -9,6 +9,10 @@ const Home = () => {
     const router = useRouter();
     const [SearcTerm, setSearcTerm] = useState("");
 
+    const handlerPress = ()=>{
+        router.push('/login')
+    }
+
     console.log(SearcTerm);
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
@@ -22,7 +26,7 @@ const Home = () => {
                         <ScreenHeaderBtn iconUrl={icons.menu} dimension="40%" />
                     ),
                     headerRight: () => (
-                        <ScreenHeaderBtn iconUrl={images.profile} dimension="90%" />
+                        <ScreenHeaderBtn iconUrl={images.avatar_default} dimension="90%" handlerPress={handlerPress} />
                     ),
                     headerTitle: ""
                 }}

@@ -14,7 +14,7 @@ const Popularjobs = () => {
 
   const { data, isLoading, error } = useFetch(
     'search', {
-    query: 'React Native US',
+    query: 'PHP developer',
     num_page: 1,
     page: 1
   });
