@@ -9,9 +9,13 @@ import location from "../assets/icons/location.png";
 import chevronLeft from '../assets/icons/chevron-left.png'
 import chevronRight from '../assets/icons/chevron-right.png'
 import NoDataRafiki from '../assets/icons/No-data-rafiki.png'
+import Fingerprint_IMG from '../assets/Fingerprint-rafiki.png'
+
 
 export default {
   heart,
+  Fingerprint_IMG
+  ,
   menu,
   NoDataRafiki,
   search,

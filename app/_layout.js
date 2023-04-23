@@ -1,10 +1,10 @@
-import { SplashScreen, Stack, useRouter} from 'expo-router';
+import { SplashScreen, Stack, useRouter } from 'expo-router';
 import { useCallback } from 'react';
 import { useFonts } from 'expo-font';
 import * as  exposplashscreen from 'expo-splash-screen';
 import { HomeIcon, User } from "lucide-react-native";
 import { COLORS, icons, images, SIZES } from '../constants';
-import { ScreenHeaderBtn} from "../components";
+import { ScreenHeaderBtn } from "../components";
 
 
 
@@ -29,16 +29,16 @@ const Layout = () => {
 
     if (!fontsLoaded) return null;
 
-    const handlerPress = ()=>{
+    const handlerPress = () => {
         router.push('user/login')
     }
-    
 
 
-    return(
 
-            <Stack onLayout={onLayoutRootView} />
-         )
+    return (
+
+        <Stack onLayout={onLayoutRootView} screenOptions={{ presentation: "modal" }} />
+    )
 
 }
 
