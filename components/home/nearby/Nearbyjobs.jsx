@@ -33,7 +33,7 @@ const Nearbyjobs = () => {
             (<ActivityIndicator size="large" color={COLORS.primary} />) :
             error ?
               (<Text>Estamos tentando resolver, há uma falha</Text>) :
-              data.length === 0 ? (<Text>Sem emprego</Text>) :
+              data.length === 0 ? (<Text>Sem dados para mostrar</Text>) :
                 (
                   data.map(job => (
                     <NearbyJobCard

@@ -1,6 +1,6 @@
 import { View, Text, ScrollView, SafeAreaView } from 'react-native';
 import { useState } from 'react';
-import { Stack, useRouter } from 'expo-router';
+import { Stack, Tabs, useRouter } from 'expo-router';
 
 import { COLORS, icons, images, SIZES } from '../constants';
 import { Nearbyjobs, Popularjobs, ScreenHeaderBtn, Welcome } from "../components";
@@ -10,13 +10,13 @@ const Home = () => {
     const [SearcTerm, setSearcTerm] = useState("");
 
     const handlerPress = ()=>{
-        router.push('/login')
+        router.push('/user/login')
     }
 
     console.log(SearcTerm);
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
-            <Stack.Screen
+           <Stack.Screen
                 options={{
                     headerStyle: {
                         backgroundColor: COLORS.lightWhite
@@ -28,7 +28,7 @@ const Home = () => {
                     headerRight: () => (
                         <ScreenHeaderBtn iconUrl={images.avatar_default} dimension="90%" handlerPress={handlerPress} />
                     ),
-                    headerTitle: ""
+                    headerTitle: "",
                 }}
             />
             <ScrollView showsVerticalScrollIndicator={false}>

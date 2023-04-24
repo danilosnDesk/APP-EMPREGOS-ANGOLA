@@ -1,0 +1,21 @@
+        <Tabs>
+ 
+ <Tabs.Screen 
+            name='index'
+            options={{
+                title: "Home",
+                href:"/",
+                tabBarIcon:(({color})=>(<HomeIcon size={22} color={color}/>)),
+
+            }}
+            />
+<Tabs.Screen 
+            name='user'
+            options={{
+                title: "Profile",
+                href:"user",
+                tabBarIcon:(({color})=>(<User size={22} color={color}/>))
+            }}
+            />      
+              
+        </Tabs>
